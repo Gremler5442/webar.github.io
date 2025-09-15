@@ -8,11 +8,11 @@
 </head>
 
 <body>
-  <a-scene>
+  <a-scene cursor="rayOrigin: mouse">
 
     <!-- <a-assets> -->
-      <!-- <a-asset-item id="tree-obj" src="https://gremler5442.github.io/webar.github.io/models/N310125.obj"></a-asset-item> -->
-      <!-- <a-asset-item id="tree-mtl" src="https://gremler5442.github.io/webar.github.io/models/N310125.mtl"></a-asset-item> -->
+    <!-- <a-asset-item id="tree-obj" src="https://gremler5442.github.io/webar.github.io/models/N310125.obj"></a-asset-item> -->
+    <!-- <a-asset-item id="tree-mtl" src="https://gremler5442.github.io/webar.github.io/models/N310125.mtl"></a-asset-item> -->
     <!-- </a-assets> -->
 
     <!-- объект: 3D модель -->
@@ -27,10 +27,11 @@
     </a-entity>
 
     <!-- объект: красный куб -->
-    <a-box position="0 1.5 -3" rotation="0 45 0" color="red"></a-box>
+    <a-box position="0 3.5 -3" color="red" animation="property: rotation; to: 0 360 0; loop: true; dur: 3000">
+    </a-box>
 
     <!-- объект: зелёная сфера -->
-    <a-sphere position="2 1.25 -5" radius="1.25" color="green"></a-sphere>
+    <a-sphere position="2 1.25 -5" radius="1.25" color="green"  animation="property: position; to: 5 5 5; loop: true; dur: 3000"></a-sphere>
 
     <!-- объект: голубой цилиндр -->
     <a-cylinder position="-2 0.75 -3" radius="0.5" height="1.5" color="blue"></a-cylinder>

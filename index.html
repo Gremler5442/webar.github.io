@@ -8,11 +8,19 @@
 </head>
 
 <body>
-  <a-scene renderer="useLegacyLights: false">
+  <a-scene>
 
+    <!-- <a-assets> -->
+      <!-- <a-asset-item id="tree-obj" src="https://gremler5442.github.io/webar.github.io/models/N310125.obj"></a-asset-item> -->
+      <!-- <a-asset-item id="tree-mtl" src="https://gremler5442.github.io/webar.github.io/models/N310125.mtl"></a-asset-item> -->
+    <!-- </a-assets> -->
+
+    <!-- объект: 3D модель -->
     <a-assets>
-      <a-asset-item id="tree-obj" src="https://gremler5442.github.io/webar.github.io/models/N310125.obj"></a-asset-item>
-      <a-asset-item id="tree-mtl" src="https://gremler5442.github.io/webar.github.io/models/N310125.mtl"></a-asset-item>
+      <!-- OBJ модель -->
+      <a-asset-item id="tree-obj" src="models/N310125.obj"></a-asset-item>
+      <!-- MTL модели-->
+      <a-asset-item id="tree-mtl" src="models/N310125.mtl"></a-asset-item>
     </a-assets>
 
     <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" scale="1 1 1" position="0 0 -5" rotation="-90 0 0">
